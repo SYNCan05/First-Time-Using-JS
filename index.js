@@ -1,8 +1,8 @@
-const Htujuan = new Date('Mar 1, 2025 00:00:00').getTime();
+const ramadhan = new Date('Mar 1, 2025 00:00:00').getTime();
 
 const Hitung = setInterval(function(){
     const now = new Date().getTime();
-    const selisih = Htujuan - now;
+    const selisih = ramadhan - now;
     
     const hari = Math.floor(selisih / ( 1000 * 60 * 60 * 24));
     const jam  = Math.floor(selisih % ( 1000 * 60 * 60 * 24) / (1000 * 60 * 60));
